@@ -1,0 +1,69 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c13333\c13333\c13333;\cssrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs20 \cf2 \cb3 \expnd0\expndtw0\kerning0
+import java.io.*;\
+import java.lang.*;\
+import java.lang.Math;\
+import java.util.Scanner;\
+\
+// Driver class\
+public class BasicCalculator \{\
+\'a0 \'a0 // main function\
+\'a0 \'a0 public static void main(String[] args)\
+\'a0 \'a0 \{\
+\'a0 \'a0 \'a0 \'a0 // Stores two numbers\
+\'a0 \'a0 \'a0 \'a0 double num1, num2;\
+\
+\'a0 \'a0 \'a0 \'a0 // Take input from the user\
+\'a0 \'a0 \'a0 \'a0 Scanner sc = new Scanner(System.in);\
+\
+\'a0 \'a0 \'a0 \'a0 System.out.println("Enter the numbers:");\
+\
+\'a0 \'a0 \'a0 \'a0 // Take the inputs\
+\'a0 \'a0 \'a0 \'a0 num1 = sc.nextDouble();\
+\'a0 \'a0 \'a0 \'a0 num2 = sc.nextDouble();\
+\
+\'a0 \'a0 \'a0 \'a0 System.out.println("Enter the operator (+,-,*,/):");\
+\
+\'a0 \'a0 \'a0 \'a0 char op = sc.next().charAt(0);\
+\'a0 \'a0 \'a0 \'a0 double o = 0;\
+\
+\'a0 \'a0 \'a0 \'a0 switch (op) \{\
+\'a0 \'a0 \'a0 \'a0 // case to add two numbers\
+\'a0 \'a0 \'a0 \'a0 case '+':\
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 o = num1 + num2;\
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 break;\
+\
+\'a0 \'a0 \'a0 \'a0 // case to subtract two numbers\
+\'a0 \'a0 \'a0 \'a0 case '-':\
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 o = num1 - num2;\
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 break;\
+\
+\'a0 \'a0 \'a0 \'a0 // case to multiply two numbers\
+\'a0 \'a0 \'a0 \'a0 case '*':\
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 o = num1 * num2;\
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 break;\
+\
+\'a0 \'a0 \'a0 \'a0 // case to divide two numbers\
+\'a0 \'a0 \'a0 \'a0 case '/':\
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 o = num1 / num2;\
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 break;\
+\
+\'a0 \'a0 \'a0 \'a0 default:\
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 System.out.println("You enter wrong input");\
+\'a0 \'a0 \'a0 \'a0 \}\
+\
+\'a0 \'a0 \'a0 \'a0 System.out.println("The final result:");\
+\'a0 \'a0 \'a0 \'a0 System.out.println();\
+\
+\'a0 \'a0 \'a0 \'a0 // print the final result\
+\'a0 \'a0 \'a0 \'a0 System.out.println(num1 + " " + op + " " + num2\
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0+ " = " + o);\
+\'a0 \'a0 \}\
+\}}
